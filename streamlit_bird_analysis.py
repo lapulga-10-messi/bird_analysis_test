@@ -1,5 +1,7 @@
+import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 try:
     import mysql.connector
 except ImportError:
@@ -73,11 +75,6 @@ if __name__ == "__main__":
     initialize()
 
 
-
-
-import pandas as pd
-import matplotlib.pyplot as plt
-import streamlit as st
 
 # Set color scheme
 FOREST_COLOR = '#C8920B'
