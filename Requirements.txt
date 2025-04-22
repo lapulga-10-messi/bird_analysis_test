@@ -1,0 +1,6 @@
+mysql-connector-python==9.2.0
+streamlit
+pandas
+numpy
+matplotlib
+protobuf<4.0.0 
