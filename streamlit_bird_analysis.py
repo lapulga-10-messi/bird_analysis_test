@@ -1,7 +1,12 @@
-import mysql.connector
-from mysql.connector import Error
 import pandas as pd
 import numpy as np
+try:
+    import mysql.connector
+except ImportError:
+    # Fallback for Streamlit Cloud
+    import pymysql
+    mysql.connector = pymysql
+from mysql.connector import Error
 
 # Database configuration
 config = {
